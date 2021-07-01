@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>ElJefeVentures</title>
 
-  <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/513a5db3bb76f4a25b5c5b709/754fba8e6df302dc89c040fa3.js");</script>
+  <script id="mcjs">
+    ! function (c, h, i, m, p) {
+      m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+    }(document, "script",
+      "https://chimpstatic.com/mcjs-connected/js/users/513a5db3bb76f4a25b5c5b709/754fba8e6df302dc89c040fa3.js");
+  </script>
 </head>
 
 <body>
@@ -16,8 +21,10 @@
       margin: 0;
       padding: 0
     }
-
     div.main {
+      position:relative;
+      top:0;
+      left:0;
       height: 100vh;
       width: 100vw;
       display: flex;
@@ -27,8 +34,23 @@
       background-size: cover;
       background-position: center center;
     }
+    div.loading {
+      position:absolute;
+      top:0;
+      left:0;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('images/airstream_loading.jpg');
+      background-size: cover;
+      background-position: center center;
+    }
   </style>
-  <div class="main">3
+  <div class="mai n">
+    <div class="loading">
+    </div>
   </div>
 
 </body>
